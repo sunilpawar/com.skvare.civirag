@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/rag/setting</path>
+    <page_callback>CRM_Civirag_Form_Settings</page_callback>
+    <title>Settings</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/rag/search</path>
+    <page_callback>CRM_Civirag_Page_Search</page_callback>
+    <title>Search</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
