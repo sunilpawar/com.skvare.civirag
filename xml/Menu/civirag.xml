@@ -1,15 +1,42 @@
 <?xml version="1.0"?>
 <menu>
   <item>
-    <path>civicrm/rag/setting</path>
+    <path>civicrm/admin/rag/settings</path>
     <page_callback>CRM_Civirag_Form_Settings</page_callback>
-    <title>Settings</title>
-    <access_arguments>access CiviCRM</access_arguments>
+    <title>RAG Settings</title>
+    <desc>Configure RAG (Retrieval-Augmented Generation) integration settings</desc>
+    <access_arguments>administer CiviCRM</access_arguments>
+    <adminGroup>System Settings</adminGroup>
+    <icon>fa-cog</icon>
+    <weight>100</weight>
   </item>
   <item>
     <path>civicrm/rag/search</path>
     <page_callback>CRM_Civirag_Page_Search</page_callback>
-    <title>Search</title>
+    <title>RAG Search</title>
+    <desc>AI-powered natural language search across CiviCRM data</desc>
     <access_arguments>access CiviCRM</access_arguments>
+    <adminGroup>Search</adminGroup>
+    <icon>fa-search</icon>
+    <weight>50</weight>
+  </item>
+  <item>
+    <path>civicrm/admin/rag/sync</path>
+    <page_callback>CRM_Civirag_Page_SyncStatus</page_callback>
+    <title>RAG Sync Status</title>
+    <desc>Monitor RAG synchronization queue and status</desc>
+    <access_arguments>administer CiviCRM</access_arguments>
+    <adminGroup>System Settings</adminGroup>
+    <icon>fa-sync</icon>
+    <weight>101</weight>
+  </item>
+  <item>
+    <path>civicrm/ajax/rag/test</path>
+    <page_callback>CRM_Civirag_Page_Ajax</page_callback>
+    <title>RAG AJAX Handler</title>
+    <desc>AJAX endpoints for RAG functionality</desc>
+    <access_arguments>access CiviCRM</access_arguments>
+    <is_public>false</is_public>
+    <weight>999</weight>
   </item>
 </menu>

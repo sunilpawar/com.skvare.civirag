@@ -1,13 +1,21 @@
 <?xml version="1.0"?>
 <extension key="com.skvare.civirag" type="module">
   <file>civirag</file>
-  <name>CiviCRM RAG Integration</name>
-  <description>Retrieval-Augmented Generation for CiviCRM data</description>
+  <name>CiviRAG - CiviCRM RAG Integration</name>
+  <description>Retrieval-Augmented Generation integration for CiviCRM. Enables AI-powered natural language search across your CiviCRM data using external RAG backend services. Search contacts, activities, cases, and more using plain English queries.</description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>FIXME</author>
-    <email>FIXME</email>
+    <author>Skvare</author>
+    <email>info@skvare.com</email>
   </maintainer>
+  <authors>
+    <author>
+      <name>Sunil Pawar</name>
+      <email>sunil@skvre.com</email>
+      <homepage>https://skvare.com</homepage>
+      <role>Maintainer</role>
+    </author>
+  </authors>
   <urls>
     <url desc="Main Extension Page">http://FIXME</url>
     <url desc="Documentation">http://FIXME</url>
@@ -20,7 +28,7 @@
   <compatibility>
     <ver>6.6</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>AI-powered search extension that integrates with external RAG (Retrieval-Augmented Generation) services to enable natural language queries across CiviCRM data. Features real-time synchronization, queue-based processing, and comprehensive search capabilities</comments>
   <classloader>
     <psr0 prefix="CRM_" path="."/>
     <psr4 prefix="Civi\" path="Civi"/>

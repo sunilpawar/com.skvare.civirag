@@ -235,8 +235,9 @@ class CRM_Civirag_BAO_RagSync extends CRM_Core_DAO {
 
   /**
    * Get extension configuration
+   * Made public so it can be accessed from API
    */
-  private static function getConfig() {
+  public static function getConfig() {
     return [
       'enabled' => Civi::settings()->get('civirag_enabled') ?? TRUE,
       'backend_url' => Civi::settings()->get('civirag_backend_url') ?? 'http://localhost:8000',
